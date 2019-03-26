@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:background="@drawable/bg2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <EditText
+
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="123"
+            android:background="@drawable/text_shap"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/txt_password"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="123"
+            android:background="@drawable/text_shap"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_Login"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:onClick="showStuff"
+            android:text="Make Your Deal"
+            android:background="@drawable/btn_selector"/>
+
+    </LinearLayout>
+
+</LinearLayout>
